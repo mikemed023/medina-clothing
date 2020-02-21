@@ -17,6 +17,6 @@ export function* fetchCollections() {
 	}
 }
 
-export function* fetchCollectionsStart() {
+export function* onFetchCollectionsStart() {
 	yield takeEvery(ShopActionTypes.FETCH_COLLECTIONS_START, fetchCollections);
 }
